@@ -24,7 +24,7 @@ const CreatePost = () => {
     if(form.prompt && form.photo){
       try{
         setLoading(true);
-        const response = await fetch('http://localhost:8080/api/v1/post',{
+        const response = await fetch('https://gen-img.onrender.com/api/v1/post',{
         method:'POST',  
         headers: {
             'Content-Type': 'application/json'
@@ -55,7 +55,7 @@ const CreatePost = () => {
     if(form.prompt){
         try{
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/dhalli',{
+        const response = await fetch('https://gen-img.onrender.com/api/v1/dhalli',{
         method:'POST',  
         headers: {
             'Content-Type': 'application/json'
